@@ -1,0 +1,88 @@
+$blue: #65c8db;
+$purple: #a869d1;
+
+.hero{
+  margin: 10vh auto 0 10px !important;
+  text-align: left  !important;
+  position: relative  !important;
+  z-index: 1  !important;
+}
+.hero-title{
+  font-size: 2em !important;
+  font-weight: 700;
+}
+.hero-title span{
+  color: $blue;
+  font-size: 1em !important;
+  font-weight: 700;
+}
+.hero-paragraph{
+  font-size: 1.1em !important;
+  font-weight: 300;
+}
+.my-card{
+  margin:  auto !important;
+  text-align: center !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+.my-card-title{
+  font-size: 1.5em !important;
+  text-align: center;
+  font-weight: 700;
+}
+.my-card-paragraph{
+  font-size: .8em !important;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 auto;
+}
+.icon-title{
+  font-size: 1em !important;
+  font-weight: 200 !important;
+  margin: 0;
+}
+.icon-title span{
+  font-size: 1em !important;
+  font-weight: 500;
+}
+.icon-paragraph{
+  font-size: .6em !important;
+}
+
+.price-bill{
+  display: flex;
+  padding: 0;
+  height: auto;
+  margin: 20px auto;
+}
+.price-bill h1{
+  font-size: 2em;
+  padding: 0;
+  height: auto;
+  text-align: left;
+  width: auto;
+  font-weight: 700;
+  height: auto;
+}
+.price-bill h3{
+  font-size: 1em;
+  padding: 0 0 0 10px;
+  height: auto;
+  align-self: flex-end;
+  text-align: right;
+  width: auto;
+  height: auto;
+}
+.price{
+  align-self: flex-end;
+}
+.priceCardSpacer{
+  margin: 10px auto
+}
+
+.quoter-title{
+  text-align: center;
+  font-size: 1.3em !important;
+  font-weight: 600 !important;
+}

@@ -1,0 +1,21 @@
+$purple: #a869d1;
+
+.monthTitle{
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+}
+
+.monthBtn{
+  height: 50px;
+  width: 50px !important;
+  border-radius: 2em;
+  border: 1px solid $purple;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.activeMonth{
+  background-color: $purple;
+  color: white;
+}

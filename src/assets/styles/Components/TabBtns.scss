@@ -1,0 +1,12 @@
+$purple: #a869d1;
+
+.tab-btn{
+  background-color: transparent;
+  border: none;
+  height: 10vh;
+  font-size: .8em;
+}
+
+.active{
+  border-bottom: 4px solid $purple;
+}

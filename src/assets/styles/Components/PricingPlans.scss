@@ -1,0 +1,55 @@
+$purple: #a869d1;
+$blue: #65c8db;
+
+.free, .startup, .pro, .ultra{
+  margin: auto;
+  padding: 30px 0;
+}
+.pro{
+  color: white;
+}
+
+.pricing-plan-info{
+  height: auto;
+  margin: auto;
+  justify-content: center;
+}
+
+.pricing-pro{
+  position: relative;
+  background-color: $purple;
+  box-shadow: -22px 0px 8px -21px rgba(0,0,0,0.4),22px 0px 8px -21px rgba(0,0,0,0.4);
+}
+
+.triangle-container{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: auto !important;
+  padding: 0 0 0 0 !important;
+  margin: 0 0 0 0!important;
+  box-sizing: border-box;
+  display: flex;
+}
+.pro-triangle {
+  width: 0 !important;
+  height: 0;
+  border-top: 100px solid $blue;
+  border-right: 100px solid transparent;
+  justify-content: center;
+  align-items: center;
+}
+.pro-triangle-text{
+  font-size: .9em;
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(-45deg);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,60 @@
+$blue: #65c8db;
+$purple: #a869d1;
+
+
+.my-btn { 
+  width: auto; 
+  border-radius: 2em; 
+  height: 90%; 
+  background-color: transparent;
+  border: none;
+  margin: auto 20px;
+  padding: 0 10px;
+}
+/* .my-btn ::placeholder{
+  width: 20%;
+  height: 90%;
+} */
+.blue-transparent-btn{
+  border: 1px solid $blue;
+  color: $blue;
+  font-size: .8em;
+  padding: 10px;
+  align-items: center;
+}
+.white-transparent-btn{
+  border: 1px solid white;
+  color: white;
+  font-size: .8em;
+  padding: 10px;
+  align-items: center;
+}
+.blue-solid-btn{
+  background-color: $blue;
+  color: white;
+  font-size: .8em;
+  padding: 10px;
+  align-items: center;
+}
+.purple-solid-btn{
+  background-color: $purple;
+  color: white;
+  font-size: .8em;
+  padding: 10px;
+  align-items: center;
+}
+
+.nav-btn{
+  padding: 5px 10px !important;
+}
+
+@media screen and (max-width: 992px) {
+  .my-btn { 
+    width: 50%;
+    margin: 10px auto;
+  }
+  .white-transparent-btn{
+    border: 1px solid rgb(158, 158, 158);
+    color: rgb(158, 158, 158);
+  }
+}
