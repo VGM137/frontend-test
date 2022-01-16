@@ -14,7 +14,7 @@ const Api = (props) => {
   const securityIsActive = props.apiActiveBtn.security
 
   return (
-    <Container className='m-0 api' style={{height: '100vh', width:'100vw'}}>
+    <Container className='m-0 api' style={{height: '100vh', width:'100%'}}>
       <Text 
         cN={'my-card'}
         col={'col'} 
@@ -26,9 +26,7 @@ const Api = (props) => {
         paragraph='Guide to setup and configurations. You can present below a guide and a description of how your system configuration works and add some animated screens.'>
       </Text>
       <Tab section={'api'} />
-      <div className='row justify-content-center'>
-        <hr className='col-10'/>
-      </div>
+      <hr className='col-10 mt-3 mb-3 m-auto'/>
       <div>
         {jsIsActive &&
           <pre className='api-code'>

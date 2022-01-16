@@ -10,13 +10,13 @@ const Tab = ({section}) => {
   const cssIsActive = useSelector(state => state.apiActiveBtn.css)
   const securityIsActive = useSelector(state => state.apiActiveBtn.security)
 
-  const montlyIsActive = useSelector(state => state.pricingActiveBtn.montly)
+  const monthlyIsActive = useSelector(state => state.pricingActiveBtn.montly)
   const yearlyIsActive = useSelector(state => state.pricingActiveBtn.yearly)
 
   return (
     <>  
     {section == 'api' &&
-      <div className='row'>
+      <div className='row w-100 m-0'>
         <div className='col-10 justify-content-end' style={{margin: 'auto', display: 'flex', justifyContent: 'end'}}>
           <TabBtn bootstrap={'col-3'} cN={'apiBtn'} verify={jsIsActive} payload={'js'} name={'Initializing JS'}></TabBtn>
           <TabBtn bootstrap={'col-3'} cN={'apiBtn'} verify={cssIsActive} payload={'css'} name={'Configuration CSS'}></TabBtn>
@@ -25,9 +25,9 @@ const Tab = ({section}) => {
       </div>
     }
     {section == 'pricing' &&
-      <div className='row'>
+      <div className='row w-100 m-0'>
         <div className='col-10 justify-content-center' style={{margin: 'auto', display: 'flex', justifyContent: 'center'}}>
-          <TabBtn bootstrap={'col-4'} cN={'pricingBtn'} verify={montlyIsActive} payload={'montly'} name={'Montly'}></TabBtn>
+          <TabBtn bootstrap={'col-4'} cN={'pricingBtn'} verify={monthlyIsActive} payload={'monthly'} name={'Monhtly'}></TabBtn>
           <TabBtn bootstrap={'col-4'} cN={'pricingBtn'} verify={yearlyIsActive} payload={'yearly'} name={'Yearly'}></TabBtn>
         </div>
       </div>

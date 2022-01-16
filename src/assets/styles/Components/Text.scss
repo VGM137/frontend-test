@@ -81,8 +81,38 @@ $purple: #a869d1;
   margin: 10px auto
 }
 
-.quoter-title{
+.quot-title{
   text-align: center;
   font-size: 1.3em !important;
   font-weight: 600 !important;
+}
+.questions{
+  margin: auto !important;
+}
+.questions-title{
+  font-size: 1.8em!important;
+  font-weight: 700;
+  margin: auto !important;
+}
+.questions-paragraph{
+  font-size: .9em!important;
+  font-weight: 300;
+  /* margin: auto !important; */
+}
+.qCards-title{
+  font-size: 1em!important;
+  font-weight: 500;
+  margin: 10px 0 0 0 !important;
+}
+.qCards-paragraph{
+  font-size: .7em!important;
+  font-weight: 300;
+  /* margin: auto !important; */
+}
+
+
+@media screen and (max-width: 577px){
+  .my-card{
+    margin-top: 10px!important;
+  }
 }

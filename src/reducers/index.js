@@ -33,11 +33,11 @@ const reducer = (state, action) => {
       }
 
     case 'SET_PRICING_ACTIVE':
-      if(action.payload == 'montly'){
+      if(action.payload == 'monthly'){
         return {
           ...state,
           pricingActiveBtn: {
-            montly: true,
+            monthly: true,
             yearly: false,
           }
         }
@@ -45,7 +45,7 @@ const reducer = (state, action) => {
         return {
           ...state,
           pricingActiveBtn: {
-            montly: false,
+            monthly: false,
             yearly: true,
           }
         }
@@ -68,6 +68,7 @@ const reducer = (state, action) => {
               first: true,
               second: false,
               third: false,
+              term: 12,
             },
           }
         } else if (action.payload == 'second'){
@@ -77,6 +78,7 @@ const reducer = (state, action) => {
               first: false,
               second: true,
               third: false,
+              term: 24,
             },
           }
         } else if (action.payload == 'third'){
@@ -86,6 +88,7 @@ const reducer = (state, action) => {
               first: false,
               second: false,
               third: true,
+              term: 36
             },
           }
         }

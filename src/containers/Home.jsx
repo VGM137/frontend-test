@@ -6,6 +6,8 @@ import Hero from '../components/Hero'
 import Features from "../components/Features";
 import Api from '../components/Api'
 import Pricing from "../components/Pricing";
+import Map from "../components/Map";
+import Questions from "../components/Questions";
 import background from '../assets/static/background1.png'
 
 import '../assets/styles/Components/Home.scss'
@@ -21,6 +23,8 @@ const Home = () => {
       <Features />
       <Api />
       <Pricing />
+      <Map />
+      <Questions />
     </Container >
   )
 }

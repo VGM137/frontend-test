@@ -13,7 +13,7 @@ const initialState = {
     security: false,
   },
   pricingActiveBtn: {
-    montly: true,
+    monthly: true,
     yearly: false,
   },
   amountCustomizer: 10000,
@@ -22,6 +22,14 @@ const initialState = {
     first: true,
     second: false,
     third: false,
+    term: 12,
+  },
+  quoterValues: {
+    monthCharge: '0',
+    commission: '0',
+    deposit: '0',
+    total: '0',
+    cat: '0'    
   },
 }
 

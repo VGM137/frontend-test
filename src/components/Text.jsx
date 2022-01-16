@@ -3,10 +3,10 @@ import { connect } from 'react-redux';
 import Container from 'react-bootstrap/Container';
 import '../assets/styles/Components/Text.scss'
 
-const Text = ({type, tCol, tColSm, tColMd, tColLg, pCol, pColSm, pColMd, pColLg, height, cN, title1, title2, title3, paragraph, price}) => {
+const Text = ({type, tCol, tColSm, tColMd, tColLg, pCol, pColSm, pColMd, pColLg, height, cN, title1, title2, title3, bootstrap, paragraph, price}) => {
   return(
     <>
-      <Container className={`p-0 ${tCol} ${tColSm} ${tColMd} ${tColLg} ${cN}`} style={{height: `${height}`, margin: 'auto'}}>
+      <Container className={`p-0 ${tCol} ${tColSm} ${tColMd} ${tColLg} ${cN} ${bootstrap}`} style={{height: `${height}`, margin: 'auto'}}>
         {!type &&
           <>
             <p className={`col p-0  ${cN}-title `} style={{fontSize: '1em'}}>
@@ -16,6 +16,13 @@ const Text = ({type, tCol, tColSm, tColMd, tColLg, pCol, pColSm, pColMd, pColLg,
               }
             </p>
           </>
+        }
+        {type == 'qCards' &&
+          <>
+          <p className={`col p-0  ${cN}-title `} style={{fontSize: '1em'}}>
+            {`${title1} `}
+          </p>
+        </>
         }
         {type == 'first-regular' &&
           <>
@@ -56,6 +63,10 @@ const Text = ({type, tCol, tColSm, tColMd, tColLg, pCol, pColSm, pColMd, pColLg,
 
         {cN == 'icon' &&
           <hr className='col-1 featureCardSpacer'/>
+        }
+
+        {type == 'qCards' &&
+          <hr className='col-2 qCardSpacer'/>
         }
 
         {price &&

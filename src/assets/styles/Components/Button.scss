@@ -1,5 +1,9 @@
 $blue: #65c8db;
 $purple: #a869d1;
+$activeblue: #366b75;
+$activepurple: #57366d;
+$activeTransblue: #a5cfd883;
+$activeTranspurple: #b598c975;
 
 
 .my-btn { 
@@ -22,12 +26,20 @@ $purple: #a869d1;
   padding: 10px;
   align-items: center;
 }
+.blue-transparent-btn:active{
+  background-color: $activeTransblue;
+  color: white;
+}
 .white-transparent-btn{
   border: 1px solid white;
   color: white;
   font-size: .8em;
   padding: 10px;
   align-items: center;
+}
+.white-transparent-btn:active{
+  background-color: white;
+  color: rgb(0, 0, 0);
 }
 .blue-solid-btn{
   background-color: $blue;
@@ -36,6 +48,9 @@ $purple: #a869d1;
   padding: 10px;
   align-items: center;
 }
+.blue-solid-btn:active{
+  background-color: $activeblue;
+}
 .purple-solid-btn{
   background-color: $purple;
   color: white;
@@ -43,9 +58,15 @@ $purple: #a869d1;
   padding: 10px;
   align-items: center;
 }
+.purple-solid-btn:active{
+  background-color: $activepurple;
+}
 
 .nav-btn{
   padding: 5px 10px !important;
+}
+.thin{
+  padding: 5px;
 }
 
 @media screen and (max-width: 992px) {

@@ -24,8 +24,8 @@ const Hero = () => {
           <p className='col-12 blue-text'>For as long as <b className='purple-text'>$0.95</b> per user account</p>
         </>
         <div className='row mt-3'>
-          <Btn cN='col-5 col-sm-4 col-lg-3 h-100 m-3 blue-solid-btn' name='WATCH DEMO' icon={play}></Btn>
-          <Btn cN='col-5 col-sm-3 col-lg-2 h-100 m-3 purple-solid-btn' name='START NOW'></Btn>
+          <Btn cN='col-5 col-sm-4 col-lg-3 h-100 m-3 blue-solid-btn' name='WATCH DEMO'  icon={play}></Btn>
+          <Btn cN='col-5 col-sm-3 col-lg-2 h-100 m-3 purple-solid-btn' name='START NOW' href={'/simulator'} id={'start-now'}></Btn>
         </div>
       </Container>
     </>

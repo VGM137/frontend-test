@@ -1,0 +1,26 @@
+$grayBg: #f7f8fa;
+
+
+.map-container{
+  background-color: $grayBg;
+  height: 100%;
+  width: 100vw;
+  position: relative;
+  /* background: url('../../static/world-bg.png') */
+}
+.map-img{
+  padding: 30px;
+  height: auto!important;
+  width: auto!important;
+  max-width: 1835px;
+  max-height: 1080px;
+  position: static;
+}
+.map-images{
+  position: relative;
+}
+.map-content{
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}

@@ -1,0 +1,107 @@
+.circle-container{
+  border: 4px solid #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, .3);
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+}
+.circle-img-sm{
+  height: 50px;
+  width: 50px;
+}
+.sm{
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+.circle-img-md{
+  height: 75px;
+  width: 75px;
+}
+.md{
+  height: 75px;
+  width: 75px;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+.circle-img-gd{
+  height: 85px;
+  width: 85px;
+}
+.gd{
+  height: 85px;
+  width: 85px;
+  border-radius: 50px;
+  border: 4px solid white;
+}
+.one{
+  left: 25%;
+  top: 15%;
+}
+.two{
+  left: 35%;
+  top: 8%;
+}
+.three{
+  left: 50%;
+  top: 12%;
+}
+.four{
+  left: 67%;
+  top: 12%;
+}
+.five{
+  left: 32%;
+  top: 55%;
+}
+.six{
+  left: 60%;
+  top: 45%;
+}
+.seven{
+  left: 80%;
+  top: 65%;
+}
+@media screen and (max-width: 577px){
+  .circle-img-sm{
+    height: 30px;
+    width: 30px;
+  }
+  .sm{
+    height: 30px;
+    width: 30px;
+    border-radius: 40px;
+    border: 4px solid white;
+  }
+  .circle-img-md{
+    height: 55px;
+    width: 55px;
+  }
+  .md{
+    height: 55px;
+    width: 55px;
+    border-radius: 50px;
+    border: 4px solid white;
+  }
+  .circle-img-gd{
+    height: 65px;
+    width: 65px;
+  }
+  .gd{
+    height: 65px;
+    width: 65px;
+    border-radius: 50px;
+    border: 4px solid white;
+  }
+  .five{
+    left: 32%;
+    top: 45%;
+  }
+}

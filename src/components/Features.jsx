@@ -13,7 +13,7 @@ import '../assets/styles/Components/Features.scss'
 
 const Features = () => {
   return (
-    <Container className='' style={{height: '100vh'}}>
+    <Container className='mb-3' style={{height: 'auto'}}>
       <Text 
         cN={'my-card'}
         col={'col'} 
