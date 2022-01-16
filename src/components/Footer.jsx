@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import fb from '../assets/static/facebook.png'
-import lk from '../assets/static/linkedIn.png'
+import lk from '../assets/static/linkedin.png'
 import tw from '../assets/static/twitter.png'
 import footerBg from '../assets/static/footer-backg.png'
 import Btn from './Btn'
