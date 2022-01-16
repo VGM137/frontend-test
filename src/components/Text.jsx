@@ -9,7 +9,17 @@ const Text = ({type, tCol, tColSm, tColMd, tColLg, pCol, pColSm, pColMd, pColLg,
       <Container className={`p-0 ${tCol} ${tColSm} ${tColMd} ${tColLg} ${cN} ${bootstrap}`} style={{height: `${height}`, margin: 'auto'}}>
         {!type &&
           <>
-            <p className={`col p-0  ${cN}-title `} style={{fontSize: '1em'}}>
+            <p className={`col col-md-5 p-0 m-md-auto  ${cN}-title `} style={{fontSize: '1em'}}>
+              {`${title1} `}
+              {title2 &&
+                <span>{title2}</span>
+              }
+            </p>
+          </>
+        }
+        {type == 'left-align' &&
+          <>
+            <p className={`col col-md-10 p-0   ${cN}-title `} style={{fontSize: '1em'}}>
               {`${title1} `}
               {title2 &&
                 <span>{title2}</span>
@@ -49,6 +59,16 @@ const Text = ({type, tCol, tColSm, tColMd, tColLg, pCol, pColSm, pColMd, pColLg,
             </p>
           </>
         }
+        {type == 'double-regular' &&
+          <>
+            <p className={`col p-0 ${cN}-title`} style={{fontSize: '1em'}}>
+            <span className={`${cN} regular-text`}>{title1}</span>
+            <span className={`${cN} purple-text`}><b>{title2}</b></span>
+            <span className={`${cN} regular-text`}>{title3}</span>
+            </p>
+          </>
+        }
+
         {type == 'pricing' &&
           <>
             <p className={`col p-0 ${cN}-title `} style={{fontSize: '1.5em', fontWeight: '500'}}>

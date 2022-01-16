@@ -8,6 +8,7 @@ import Api from '../components/Api'
 import Pricing from "../components/Pricing";
 import Map from "../components/Map";
 import Questions from "../components/Questions";
+import Footer from "../components/Footer";
 import background from '../assets/static/background1.png'
 
 import '../assets/styles/Components/Home.scss'
@@ -25,6 +26,7 @@ const Home = () => {
       <Pricing />
       <Map />
       <Questions />
+      <Footer />
     </Container >
   )
 }

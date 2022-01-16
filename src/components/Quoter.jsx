@@ -9,28 +9,27 @@ import '../assets/styles/Components/Quoter.scss'
 
 const Quoter = (props) => {
 
-const amount = parseInt(props.amountCustomizer)
-const rateCustomizer = parseInt(props.rateCustomizer)
+const amount = props.amountCustomizer
+const amountCurrency = () => {return new Intl.NumberFormat().format(amount)}
+const rateCustomizer = parseFloat(props.rateCustomizer)
 const rate = (rateCustomizer/100)*amount
 const monthTerm = parseInt(props.monthTerm)
 
+const amountBubble = props.bubbles.amountBubble
+const rateBubble = props.bubbles.rangeBubble
 
 const monthCharge = ((amount/monthTerm)+((rate)/monthTerm)).toFixed(2)
+const mthChCurrency = () => {return new Intl.NumberFormat().format(monthCharge)}
 const openCharge = 348.00
-const deposit = amount-openCharge
-const totalPay = amount+openCharge+rate
+const deposite = amount-openCharge
+const depositeCurrency = () => {return new Intl.NumberFormat().format(deposite)}
+const totalPay = parseInt(amount)+openCharge+parseInt(rate)
+const totalPayCurrency = () => {return new Intl.NumberFormat().format((totalPay))}
 const cat = 15.71
-/* console.log(typeof amount)
-console.log(rateCustomizer)
-console.log(rate.toFixed(2))
-console.log(monthTerm)
-console.log(monthCharge)
-console.log(typeof openCharge)
-console.log(typeof rate) */
 
   return (
     <div className='row quoter-container'>
-      <div className='col col-sm-7 col-md-6 quoter'>
+      <div className='col-10 col-sm-8 col-md-6 col-lg-5  quoter'>
         <Text 
           cN={`quot`}
           col={'col'} 
@@ -48,7 +47,9 @@ console.log(typeof rate) */
           step={'1000'}
           label={'Monto deseado'}
           value={amount}
+          currency={amountCurrency()}
           id={'monto'}
+          bubble={amountBubble}
         />
         <Customizer 
           min={'8.9'}
@@ -57,6 +58,7 @@ console.log(typeof rate) */
           label={'Tasa anual'}
           value={rateCustomizer}
           id={'tasa'}
+          bubble={rateBubble}
         />
         <hr className='col-11 justify-content-center mt-3 mb-3 m-auto'/>
         <MonthTerm />
@@ -64,7 +66,7 @@ console.log(typeof rate) */
         <div className='row'>
           <QuoterValues
             concept={'Pago mensual'}
-            value={`$${monthCharge}`}
+            value={`$${mthChCurrency()}`}
           />
           <QuoterValues
             concept={'Comisión de apertura'}
@@ -72,11 +74,11 @@ console.log(typeof rate) */
           />
           <QuoterValues
             concept={'Monto neto Depositado'}
-            value={`$${deposit}`}
+            value={`$${depositeCurrency()}`}
           />
           <QuoterValues
             concept={'Total pagado'}
-            value={`$${totalPay}`}
+            value={`$${totalPayCurrency()}`}
           />
           <QuoterValues
             concept={'CAT'}
@@ -84,6 +86,7 @@ console.log(typeof rate) */
           />
         </div> 
         <Btn 
+          bootsrap={'m-auto'}
           id={'quoter'} 
           cN={'quot purple-solid-btn'}  
           name={'SOLICITAR MI CRÉDITO'}
@@ -99,6 +102,7 @@ const mapStateToProps = (state) => {
     amountCustomizer: state.amountCustomizer,
     rateCustomizer: state.rateCustomizer,
     monthTerm: state.monthTerm.term,
+    bubbles: state.bubbles
   }
 }
 

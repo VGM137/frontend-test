@@ -21,7 +21,8 @@ const Questions = () => {
       <div className='row  w-100 p-0 m-auto justify-content-center'>
         <div className='col-5 m-0 questions-left'>
           <Text 
-            bootstrap={'mt-5'}
+            type={'left-align'}
+            bootstrap={'mt-5 ml-0'}
             cN={'questions'}
             col={'col'} 
             tCol={'col-10'}

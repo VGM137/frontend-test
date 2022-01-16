@@ -92,6 +92,25 @@ const reducer = (state, action) => {
             },
           }
         }
+      
+      case 'INCREASE_LEFT':
+        if(action.payload.input == 'monto'){
+          return {
+            ...state,
+            bubbles:{
+              amountBubble: action.payload.value,
+              rangeBubble: state.bubbles.rangeBubble,
+            }
+          }
+        } else if(action.payload.input == 'tasa'){
+          return {
+            ...state,
+            bubbles:{
+              amountBubble: state.bubbles.amountBubble,
+              rangeBubble: action.payload.value,
+            }
+          }
+        }
 
     default :
     return state;

@@ -10,7 +10,7 @@ const Tab = ({section}) => {
   const cssIsActive = useSelector(state => state.apiActiveBtn.css)
   const securityIsActive = useSelector(state => state.apiActiveBtn.security)
 
-  const monthlyIsActive = useSelector(state => state.pricingActiveBtn.montly)
+  const monthlyIsActive = useSelector(state => state.pricingActiveBtn.monthly)
   const yearlyIsActive = useSelector(state => state.pricingActiveBtn.yearly)
 
   return (

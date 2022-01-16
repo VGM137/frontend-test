@@ -31,6 +31,10 @@ const initialState = {
     total: '0',
     cat: '0'    
   },
+  bubbles:{
+    amountBubble: 0,
+    rangeBubble: 0,
+  }
 }
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()

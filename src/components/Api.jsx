@@ -76,12 +76,6 @@ const Api = (props) => {
             <br />
             <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`$('.modal__content').removeClass('modal__content--visible');`}</span>
             <br />
-            <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`var modaltypeb = $(this).data("popup");`}</span>
-            <br />
-            <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`$('.modal__content--'+modaltypeb).toggleClass('modal__content--visible');`}</span>
-            <br />
-            <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;{`});`}</span>
-            <br />
             <span className='api-span strong-blue'>{`});`}</span>
             </code>
           </pre>
@@ -104,6 +98,12 @@ const Api = (props) => {
             <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;{`$('.modal__switch').on('click', function(e) {`}</span>
             <br />
             <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`$('.modal__content').removeClass('modal__content--visible');`}</span>
+            <br />
+            <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`var modaltypeb = $(this).data("popup");`}</span>
+            <br />
+            <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`$('.modal__content--'+modaltypeb).toggleClass('modal__content--visible');`}</span>
+            <br />
+            <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;{`});`}</span>
             <br />
             <span className='api-span strong-blue'>&ensp;&ensp;&ensp;&ensp;&ensp;{`var modaltypeb = $(this).data("popup");`}</span>
             <br />

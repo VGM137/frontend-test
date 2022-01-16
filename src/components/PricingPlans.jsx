@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 import Container from 'react-bootstrap/Container'
 import Text from './Text'
 import Btn from './Btn'
-import Characteristics from './Characteristics'
 import '../assets/styles/Components/PricingPlans.scss'
 
 const PricingPlans = ({children, title1, price, title3, plan}) => {

@@ -18,3 +18,7 @@ export const setMonthTerm = (payload) => ({
   type: 'SET_MONTH_TERM',
   payload,
 })
+export const increaseLeft = (payload) => ({
+  type: 'INCREASE_LEFT',
+  payload,
+})

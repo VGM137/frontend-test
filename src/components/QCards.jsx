@@ -7,7 +7,7 @@ import '../assets/styles/Components/QCards.scss'
 const QCards = ({icon, cN, title1, paragraph, btnName}) => {
 
   return (
-    <div className='col-3 justify-content-evenly qcard-container'>
+    <div className='col-3 justify-content-evenly qcard-container' >
       <div className='col-3 justify-content-left qcard-icon-container'>
         <img className='qcard-icon' src={icon} alt="" />
       </div>

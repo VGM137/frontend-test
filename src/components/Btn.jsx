@@ -9,6 +9,10 @@ const Btn = ({id, cN, func, name, href, icon, bootsrap}) => {
       window.location.href=`#${href}`
     } else if(id == 'quoter'){
       window.location.href=`#${href}`
+    } else if(id == 'watch'){
+      const gif = document.getElementById('gif-display')
+      console.log(gif)
+      gif.classList.remove('hide')
     }
   }
 

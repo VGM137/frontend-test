@@ -1,0 +1,50 @@
+.gif-display{
+  background-color: rgba(0, 0, 0, 0.534);
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, .5 );
+  border-radius: 30px;
+  padding: 30px !important;
+  box-sizing: border-box;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+}
+.gif-container{
+  display: flex;
+  margin: auto!important;
+  /* padding: 0 !important; */
+  align-items: center;
+  margin: auto;
+}
+.gif{
+  display: flex;
+  margin: auto;
+  height: auto;
+  width: 100%;
+}
+.gif-button{
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  position: absolute;
+  z-index: 3;
+  top: -10px;
+  left: -10px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: rgb(75, 75, 75);
+  border: none;
+  color: white;
+}
+.hide{
+  display: none!important;
+}

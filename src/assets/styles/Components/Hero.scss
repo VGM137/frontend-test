@@ -1,10 +1,26 @@
 $blue: #65c8db;
 $purple: #a869d1;
 
+.hero-container{
+  position: relative;
+}
+
 .blue-text{
   color: $blue;
   margin-left: 10px;
 }
 .purple-text{
   color: $purple
+}
+
+.hero-img-container{
+  overflow: hidden;
+  display: flex;
+}
+.hero-img{
+  position: relative;
+  z-index: 1;
+  box-shadow: 0px 0px 12px 1px rgba(0, 0, 0, .2);
+  margin: 10vh auto;
+  border-radius: 20px;
 }
