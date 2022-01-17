@@ -27,9 +27,8 @@ const NavBar = () => {
               <NavDropdown.Item href="#/simulator">Multiple Unique Designs</NavDropdown.Item>
               <NavDropdown.Item href="#/simulator">Flexible HTML</NavDropdown.Item>
               <NavDropdown.Item href="#/simulator">User Friendly</NavDropdown.Item>
-
             </NavDropdown>
-            <Nav.Link style={{margin: 'auto 15px'}}>PRICING</Nav.Link>
+            <Nav.Link style={{margin: 'auto 15px'}} href='#/pricing'>PRICING</Nav.Link>
             <Nav.Link style={{margin: 'auto 15px'}}>CONTACT</Nav.Link>
             <Button cN={'my-btn blue-transparent-btn nav-btn'} name={'LOGIN'} href={'/simulator'} id={'quoter'}/>
             <Button cN={'my-btn white-transparent-btn nav-btn'} name={'GET STARTED'} href={'/simulator'} id={'quoter'}/>
