@@ -13,7 +13,7 @@ const NavBar = () => {
   return (
     <Navbar expand="lg">
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="#/">
           <img className="lateral" src={lateral} alt="" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
